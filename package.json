@@ -1,0 +1,28 @@
+{
+  "name": "commenton_mysql_node",
+  "version": "1.0.0",
+  "description": "leave a comment app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jens180980/CommentOn_mysql_node.git"
+  },
+  "keywords": [
+    "comments",
+    "mysql",
+    "node.js"
+  ],
+  "author": "jens harder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jens180980/CommentOn_mysql_node/issues"
+  },
+  "homepage": "https://github.com/Jens180980/CommentOn_mysql_node#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
