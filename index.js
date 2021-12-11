@@ -16,11 +16,16 @@ const connection = mysql.createConnection({
 
 connection.connect( err => {
     if(err) throw err
-    else console.log('Database connection succesfull!');
+    else console.log('Database connection succesfully!');
 })
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
+    res.end
+    connection.query('SELECT * FROM comment', function(err, results, fields) {
+        if(err) throw err
+        console.log('comments retrieved from database');
+    })
 })
 
 app.post("/",encoder, function(req,res){
@@ -34,3 +39,4 @@ app.post("/",encoder, function(req,res){
 })
 
 app.listen(4000)
+
